@@ -22,7 +22,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 const geometry = new THREE.IcosahedronGeometry(1, 0);
-const material = new THREE.MeshBasicMaterial({ color: 0x00aa00 });
+const material = new THREE.MeshNormalMaterial({ color: 0xf2f2f2 });
 material.wireframe = true;
 
 const cubeFR1 = new THREE.Mesh(geometry, material);
