@@ -7,7 +7,7 @@
 
 canvas{
   position: fixed;
-  
+  display: none;
   top: 0;
   left: 0;
   z-index: -1;
@@ -232,6 +232,14 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (min-width: 1600px) {
   
+  canvas{
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
   .hero-inner{
     width: 796px;
     
