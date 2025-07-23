@@ -143,6 +143,28 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 1px solid var(--secondaryColor);
 }
 
+.project-btn {
+  display: inline-block;
+  font-family: "quasimoda", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--primaryColor);
+  background: none;
+  border: 2px solid var(--secondaryColor);
+  border-radius: 6px;
+  padding: 6px 8px;
+  margin: 14px 6px 4px 6px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.project-btn:hover {
+  background: var(--primaryColor);
+  color: var(--thirdColor);
+  border: 2px solid var(--primaryColor);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
 @media only screen and (min-width: 820px) {
   
 
@@ -237,6 +259,12 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 18px;
     border-bottom: 1px solid var(--secondaryColor);
   }
+
+  .project-btn {
+    font-size: 1.05rem;
+    padding: 7px 10px;
+    border-radius: 7px;
+  }
 }
 
 @media only screen and (min-width: 1600px) {
@@ -324,4 +352,11 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 18px;
     border-bottom: 1px solid var(--secondaryColor);
   }
+
+  .project-btn {
+    font-size: 1.15rem;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+
 }
